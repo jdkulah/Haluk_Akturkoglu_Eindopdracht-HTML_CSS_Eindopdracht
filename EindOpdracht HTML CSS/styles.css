@@ -1,0 +1,281 @@
+p {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: Tahoma, Verdana, sans-serif;
+  margin-bottom: 2px;
+  color: #82c341;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  margin-bottom: -6px;
+}
+
+.logo {
+  padding-left: 140px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  margin-bottom: -8px;
+}
+
+/* Button */
+
+.button {
+  position: relative;
+  background-color: #82c341;
+  border: none;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* contactform*/
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Video */
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+}
+
+/* Parent */
+
+.parent {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr 30px;
+  grid-template-rows: 75px 40px 1fr auto;
+  height: auto;
+  grid-template-areas:
+    ". header header ."
+    ". nav nav ."
+    ". main aside ."
+    ". footer footer .";
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  margin: 1px;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  grid-area: header;
+}
+
+/* menu */
+
+nav {
+  background-color: #82c341;
+  grid-area: nav;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin-top: 8px;
+  margin-left: 80px;
+}
+
+.navigation li {
+  display: inline;
+  margin-left: 5px;
+}
+
+.navigation li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation li a:hover:not(.active) {
+  color: rgb(77, 77, 77);
+}
+
+/* main */
+
+main {
+  grid-area: main;
+  padding: 10px;
+}
+
+aside {
+  background-color: rgb(248, 248, 248);
+  grid-area: aside;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+/* footer */
+
+footer {
+  background-color: #82c341;
+  grid-area: footer;
+  padding: 10px;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin-left: -30px;
+}
+
+.footer li {
+  margin-left: -8px;
+}
+
+.footer li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer li a:hover:not(.active) {
+  color: rgb(77, 77, 77);
+}
+
+/* einde footer */
+
+@media (min-width: 1024px) {
+  .parent {
+    grid-template-rows: 100px 45px 1fr auto;
+    grid-template-columns: 30px 1fr 200px 30px;
+    grid-template-areas:
+      ". header header ."
+      ". nav nav ."
+      ". main aside ."
+      ". footer footer .";
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive {
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navigation ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: -30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navigation li {
+    display: inline;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-1 {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: -30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer li {
+    margin-left: -8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer li a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer li a:hover:not(.active) {
+    color: rgb(77, 77, 77);
+  }
+}
